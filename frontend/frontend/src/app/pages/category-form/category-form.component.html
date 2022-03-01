@@ -1,0 +1,39 @@
+<div class="adminpage">
+
+  <p-card header="Categories Form Edit" subheader="List of all categories Form Edit">
+
+  <form [formGroup]= form >
+    <div class="p-grid">
+      <div class="p-col-12">
+        <p-toolbar>
+          <div class="p-toolbar-group-left">
+
+<button pButton pRipple type="button" (click)="onSubmit()" label="Add"></button>
+
+<button pButton pRipple type="button" label="Cancel" class="p-button-danger"></button>
+
+          </div>
+
+          </p-toolbar>
+      </div>
+  </div>
+  <div class="card">
+
+
+    <div class="p-fluid p-formgrid p-grid">
+            <div class="p-field p-col">
+            <label for="firstname2">Name</label>
+            <input formControlName="name" id="name" type="text" pInputText />
+        </div>
+        <div class="p-field p-col">
+            <label for="lastname2">Icon</label>
+            <input formControlName="icon" id="icon" type="text" pInputText />
+        </div>
+
+    </div>
+
+</div>
+</form>
+</p-card>
+
+</div>
